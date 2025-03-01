@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
 - Live Site URL: [https://drmetr.github.io/FAQ-Accordion-challenge/](https://drmetr.github.io/FAQ-Accordion-challenge/)
 
 ## My process
