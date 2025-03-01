@@ -1,0 +1,102 @@
+$Lightpink: hsl(275, 100%, 97%);
+$Grayishpurple: hsl(292, 16%, 49%);
+$Darkpurple: hsl(292, 42%, 14%);
+
+:root {
+    font-size: 16px;
+    font-family: Work Sans, sans-serif;
+    line-height: 150%;
+};
+
+@mixin mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("../assets/images/background-pattern-mobile.svg");
+    background-color: $Lightpink;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include mobile;
+    
+    @media screen and (min-width: 768px) {
+        background-image: url('/assets/images/background-pattern-desktop.svg');
+    }
+}
+
+.card {
+    min-width: 140px;
+    max-width: 250px;
+    width: 55em;
+    margin-top: 2lh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 
+        0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    @media screen and (min-width: 500px) {
+        min-width: 400px;
+        max-width: 600px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 5lh;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+            0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+h1 {
+    font-weight: 700;
+    color: $Darkpurple;
+    margin-left: 0.5em;
+}
+
+#starIcon {
+    height: 1.5lh;
+    margin-top: 0.6lh;
+}
+.question {
+    color: $Darkpurple;
+    font-weight: 600;
+}
+
+.answer {
+    color: $Grayishpurple;
+    font-weight: 400;
+}
+
+hr {
+    border: 0.5px solid rgb(230, 226, 226);
+}
+
+.question > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    cursor: pointer;
+}
+
+.question > div > p {
+    margin-right: 1em;
+}
+
+.question > img {
+    object-fit: contain;
+}
