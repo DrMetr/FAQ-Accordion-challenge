@@ -41,7 +41,7 @@ for (item of arr){
     questDiv.appendChild(questPara);
 
     let image = document.createElement("img");
-    image.src = '/assets/images/icon-plus.svg';
+    image.src = 'assets/images/icon-plus.svg';
     questDiv.appendChild(image);
 
     let answer = document.createElement("p");
@@ -56,10 +56,10 @@ for (item of arr){
       let itsAnswer = question.querySelector(".answer");
       if (itsAnswer.style.display == ""){
         itsAnswer.style.display = "none";
-        image.src = '/assets/images/icon-plus.svg'
+        image.src = 'assets/images/icon-plus.svg';
       } else {
         itsAnswer.style.display = "";
-        image.src = '/assets/images/icon-minus.svg'
+        image.src = 'assets/images/icon-minus.svg';
       }
     });
   }};
